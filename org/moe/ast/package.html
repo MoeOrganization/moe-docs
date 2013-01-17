@@ -1,0 +1,723 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>ast - org.moe.ast</title>
+          <meta name="description" content="ast - org.moe.ast" />
+          <meta name="keywords" content="ast org.moe.ast" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'org.moe.ast.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.moe">moe</a></p>
+        <h1>ast</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ast</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.moe.ast.AST" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ASTextendsObject"></a>
+      <a id="AST:AST"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AST.html"><span class="name">AST</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.AndNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AndNodeextendsASTwithProductwithSerializable"></a>
+      <a id="AndNode:AndNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AndNode.html"><span class="name">AndNode</span></a><span class="params">(<span name="lhs">lhs: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="rhs">rhs: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.ArrayLiteralNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ArrayLiteralNodeextendsASTwithProductwithSerializable"></a>
+      <a id="ArrayLiteralNode:ArrayLiteralNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ArrayLiteralNode.html"><span class="name">ArrayLiteralNode</span></a><span class="params">(<span name="values">values: <span class="extype" name="scala.List">List</span>[<a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a>]</span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.AttributeAccessNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AttributeAccessNodeextendsASTwithProductwithSerializable"></a>
+      <a id="AttributeAccessNode:AttributeAccessNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AttributeAccessNode.html"><span class="name">AttributeAccessNode</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.AttributeAssignmentNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AttributeAssignmentNodeextendsASTwithProductwithSerializable"></a>
+      <a id="AttributeAssignmentNode:AttributeAssignmentNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AttributeAssignmentNode.html"><span class="name">AttributeAssignmentNode</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="expression">expression: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.AttributeDeclarationNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AttributeDeclarationNodeextendsASTwithProductwithSerializable"></a>
+      <a id="AttributeDeclarationNode:AttributeDeclarationNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AttributeDeclarationNode.html"><span class="name">AttributeDeclarationNode</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="expression">expression: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.BooleanLiteralNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BooleanLiteralNodeextendsASTwithProductwithSerializable"></a>
+      <a id="BooleanLiteralNode:BooleanLiteralNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BooleanLiteralNode.html"><span class="name">BooleanLiteralNode</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.CatchNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CatchNodeextendsASTwithProductwithSerializable"></a>
+      <a id="CatchNode:CatchNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CatchNode.html"><span class="name">CatchNode</span></a><span class="params">(<span name="type_name">type_name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="local_name">local_name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.ClassAccessNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClassAccessNodeextendsASTwithProductwithSerializable"></a>
+      <a id="ClassAccessNode:ClassAccessNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ClassAccessNode.html"><span class="name">ClassAccessNode</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.ClassDeclarationNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClassDeclarationNodeextendsASTwithProductwithSerializable"></a>
+      <a id="ClassDeclarationNode:ClassDeclarationNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ClassDeclarationNode.html"><span class="name">ClassDeclarationNode</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="superclass">superclass: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.ClassLiteralNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClassLiteralNodeextendsASTwithProductwithSerializable"></a>
+      <a id="ClassLiteralNode:ClassLiteralNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ClassLiteralNode.html"><span class="name">ClassLiteralNode</span></a><span class="params">()</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.CompilationUnitNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CompilationUnitNodeextendsASTwithProductwithSerializable"></a>
+      <a id="CompilationUnitNode:CompilationUnitNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CompilationUnitNode.html"><span class="name">CompilationUnitNode</span></a><span class="params">(<span name="body">body: <a href="ScopeNode.html" class="extype" name="org.moe.ast.ScopeNode">ScopeNode</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.ConstructorDeclarationNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConstructorDeclarationNodeextendsASTwithProductwithSerializable"></a>
+      <a id="ConstructorDeclarationNode:ConstructorDeclarationNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ConstructorDeclarationNode.html"><span class="name">ConstructorDeclarationNode</span></a><span class="params">(<span name="params">params: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.DecrementNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DecrementNodeextendsASTwithProductwithSerializable"></a>
+      <a id="DecrementNode:DecrementNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DecrementNode.html"><span class="name">DecrementNode</span></a><span class="params">(<span name="receiver">receiver: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.DestructorDeclarationNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DestructorDeclarationNodeextendsASTwithProductwithSerializable"></a>
+      <a id="DestructorDeclarationNode:DestructorDeclarationNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DestructorDeclarationNode.html"><span class="name">DestructorDeclarationNode</span></a><span class="params">(<span name="params">params: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.DoWhileNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DoWhileNodeextendsASTwithProductwithSerializable"></a>
+      <a id="DoWhileNode:DoWhileNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DoWhileNode.html"><span class="name">DoWhileNode</span></a><span class="params">(<span name="condition">condition: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.FinallyNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FinallyNodeextendsASTwithProductwithSerializable"></a>
+      <a id="FinallyNode:FinallyNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FinallyNode.html"><span class="name">FinallyNode</span></a><span class="params">(<span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.FloatLiteralNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FloatLiteralNodeextendsASTwithProductwithSerializable"></a>
+      <a id="FloatLiteralNode:FloatLiteralNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FloatLiteralNode.html"><span class="name">FloatLiteralNode</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.ForNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ForNodeextendsASTwithProductwithSerializable"></a>
+      <a id="ForNode:ForNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ForNode.html"><span class="name">ForNode</span></a><span class="params">(<span name="init">init: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="condition">condition: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="update">update: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.ForeachNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ForeachNodeextendsASTwithProductwithSerializable"></a>
+      <a id="ForeachNode:ForeachNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ForeachNode.html"><span class="name">ForeachNode</span></a><span class="params">(<span name="topic">topic: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="list">list: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.HashLiteralNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HashLiteralNodeextendsASTwithProductwithSerializable"></a>
+      <a id="HashLiteralNode:HashLiteralNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HashLiteralNode.html"><span class="name">HashLiteralNode</span></a><span class="params">(<span name="map">map: <span class="extype" name="scala.List">List</span>[<a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a>]</span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.IfElseNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IfElseNodeextendsASTwithProductwithSerializable"></a>
+      <a id="IfElseNode:IfElseNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IfElseNode.html"><span class="name">IfElseNode</span></a><span class="params">(<span name="if_condition">if_condition: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="if_body">if_body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="else_body">else_body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.IfElsifElseNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IfElsifElseNodeextendsASTwithProductwithSerializable"></a>
+      <a id="IfElsifElseNode:IfElsifElseNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IfElsifElseNode.html"><span class="name">IfElsifElseNode</span></a><span class="params">(<span name="if_condition">if_condition: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="if_body">if_body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="elsif_condition">elsif_condition: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="elsif_body">elsif_body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="else_body">else_body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.IfElsifNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IfElsifNodeextendsASTwithProductwithSerializable"></a>
+      <a id="IfElsifNode:IfElsifNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IfElsifNode.html"><span class="name">IfElsifNode</span></a><span class="params">(<span name="if_condition">if_condition: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="if_body">if_body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="elsif_condition">elsif_condition: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="elsif_body">elsif_body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.IfNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IfNodeextendsASTwithProductwithSerializable"></a>
+      <a id="IfNode:IfNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IfNode.html"><span class="name">IfNode</span></a><span class="params">(<span name="if_condition">if_condition: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="if_body">if_body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.IncrementNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IncrementNodeextendsASTwithProductwithSerializable"></a>
+      <a id="IncrementNode:IncrementNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IncrementNode.html"><span class="name">IncrementNode</span></a><span class="params">(<span name="receiver">receiver: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.IntLiteralNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntLiteralNodeextendsASTwithProductwithSerializable"></a>
+      <a id="IntLiteralNode:IntLiteralNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IntLiteralNode.html"><span class="name">IntLiteralNode</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A literal Int node
+</p>
+    </li><li name="org.moe.ast.MethodCallNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MethodCallNodeextendsASTwithProductwithSerializable"></a>
+      <a id="MethodCallNode:MethodCallNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MethodCallNode.html"><span class="name">MethodCallNode</span></a><span class="params">(<span name="invocant">invocant: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="method_name">method_name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="args">args: <span class="extype" name="scala.List">List</span>[<a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a>]</span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.MethodDeclarationNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MethodDeclarationNodeextendsASTwithProductwithSerializable"></a>
+      <a id="MethodDeclarationNode:MethodDeclarationNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MethodDeclarationNode.html"><span class="name">MethodDeclarationNode</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.NotNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NotNodeextendsASTwithProductwithSerializable"></a>
+      <a id="NotNode:NotNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="NotNode.html"><span class="name">NotNode</span></a><span class="params">(<span name="receiver">receiver: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.OrNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OrNodeextendsASTwithProductwithSerializable"></a>
+      <a id="OrNode:OrNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="OrNode.html"><span class="name">OrNode</span></a><span class="params">(<span name="lhs">lhs: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="rhs">rhs: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.PackageDeclarationNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PackageDeclarationNodeextendsASTwithProductwithSerializable"></a>
+      <a id="PackageDeclarationNode:PackageDeclarationNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PackageDeclarationNode.html"><span class="name">PackageDeclarationNode</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.PairLiteralNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PairLiteralNodeextendsASTwithProductwithSerializable"></a>
+      <a id="PairLiteralNode:PairLiteralNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PairLiteralNode.html"><span class="name">PairLiteralNode</span></a><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.ScopeNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScopeNodeextendsASTwithProductwithSerializable"></a>
+      <a id="ScopeNode:ScopeNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ScopeNode.html"><span class="name">ScopeNode</span></a><span class="params">(<span name="body">body: <a href="StatementsNode.html" class="extype" name="org.moe.ast.StatementsNode">StatementsNode</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.SelfLiteralNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SelfLiteralNodeextendsASTwithProductwithSerializable"></a>
+      <a id="SelfLiteralNode:SelfLiteralNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SelfLiteralNode.html"><span class="name">SelfLiteralNode</span></a><span class="params">()</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.StatementsNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StatementsNodeextendsASTwithProductwithSerializable"></a>
+      <a id="StatementsNode:StatementsNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StatementsNode.html"><span class="name">StatementsNode</span></a><span class="params">(<span name="nodes">nodes: <span class="extype" name="scala.List">List</span>[<a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a>]</span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.StringLiteralNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StringLiteralNodeextendsASTwithProductwithSerializable"></a>
+      <a id="StringLiteralNode:StringLiteralNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StringLiteralNode.html"><span class="name">StringLiteralNode</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.SubroutineCallNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SubroutineCallNodeextendsASTwithProductwithSerializable"></a>
+      <a id="SubroutineCallNode:SubroutineCallNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SubroutineCallNode.html"><span class="name">SubroutineCallNode</span></a><span class="params">(<span name="function_name">function_name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="args">args: <span class="extype" name="scala.List">List</span>[<a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a>]</span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.SubroutineDeclarationNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SubroutineDeclarationNodeextendsASTwithProductwithSerializable"></a>
+      <a id="SubroutineDeclarationNode:SubroutineDeclarationNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SubroutineDeclarationNode.html"><span class="name">SubroutineDeclarationNode</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.SuperLiteralNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SuperLiteralNodeextendsASTwithProductwithSerializable"></a>
+      <a id="SuperLiteralNode:SuperLiteralNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SuperLiteralNode.html"><span class="name">SuperLiteralNode</span></a><span class="params">()</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.TryNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TryNodeextendsASTwithProductwithSerializable"></a>
+      <a id="TryNode:TryNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TryNode.html"><span class="name">TryNode</span></a><span class="params">(<span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="catch_nodes">catch_nodes: <span class="extype" name="scala.List">List</span>[<a href="CatchNode.html" class="extype" name="org.moe.ast.CatchNode">CatchNode</a>]</span>, <span name="finally_nodes">finally_nodes: <span class="extype" name="scala.List">List</span>[<a href="FinallyNode.html" class="extype" name="org.moe.ast.FinallyNode">FinallyNode</a>]</span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.UndefLiteralNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UndefLiteralNodeextendsASTwithProductwithSerializable"></a>
+      <a id="UndefLiteralNode:UndefLiteralNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UndefLiteralNode.html"><span class="name">UndefLiteralNode</span></a><span class="params">()</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.UnlessElseNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnlessElseNodeextendsASTwithProductwithSerializable"></a>
+      <a id="UnlessElseNode:UnlessElseNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UnlessElseNode.html"><span class="name">UnlessElseNode</span></a><span class="params">(<span name="unless_condition">unless_condition: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="unless_body">unless_body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="else_body">else_body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.UnlessNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnlessNodeextendsASTwithProductwithSerializable"></a>
+      <a id="UnlessNode:UnlessNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UnlessNode.html"><span class="name">UnlessNode</span></a><span class="params">(<span name="unless_condition">unless_condition: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="unless_body">unless_body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.VariableAccessNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VariableAccessNodeextendsASTwithProductwithSerializable"></a>
+      <a id="VariableAccessNode:VariableAccessNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="VariableAccessNode.html"><span class="name">VariableAccessNode</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.VariableAssignmentNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VariableAssignmentNodeextendsASTwithProductwithSerializable"></a>
+      <a id="VariableAssignmentNode:VariableAssignmentNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="VariableAssignmentNode.html"><span class="name">VariableAssignmentNode</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="expression">expression: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.VariableDeclarationNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VariableDeclarationNodeextendsASTwithProductwithSerializable"></a>
+      <a id="VariableDeclarationNode:VariableDeclarationNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="VariableDeclarationNode.html"><span class="name">VariableDeclarationNode</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="expression">expression: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.ast.WhileNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WhileNodeextendsASTwithProductwithSerializable"></a>
+      <a id="WhileNode:WhileNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="WhileNode.html"><span class="name">WhileNode</span></a><span class="params">(<span name="condition">condition: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="body">body: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
