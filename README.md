@@ -1,5 +1,7 @@
 # README
 
+Read these docs in lovely html at <http://moeorganization.github.com/moe-docs/#package>.
+
 To contribute to moe-docs. Please have the following folder setup:
 
 * moe
