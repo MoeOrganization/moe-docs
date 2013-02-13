@@ -40,7 +40,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">DecrementNode</span><span class="params">(<span name="receiver">receiver: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">DecrementNode</span><span class="params">(<span name="receiver">receiver: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="is_prefix">is_prefix: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result"> extends <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -85,7 +85,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.moe.ast.DecrementNode#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(receiver:org.moe.ast.AST):org.moe.ast.DecrementNode"></a>
+      <a id="&lt;init&gt;(receiver:org.moe.ast.AST,is_prefix:Boolean):org.moe.ast.DecrementNode"></a>
       <a id="&lt;init&gt;:DecrementNode"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -93,7 +93,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">DecrementNode</span><span class="params">(<span name="receiver">receiver: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>)</span>
+        <span class="name">DecrementNode</span><span class="params">(<span name="receiver">receiver: <a href="AST.html" class="extype" name="org.moe.ast.AST">AST</a></span>, <span name="is_prefix">is_prefix: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span>
       </span>
       </h4>
       
@@ -255,6 +255,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.moe.ast.DecrementNode#is_prefix" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="is_prefix:Boolean"></a>
+      <a id="is_prefix:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">is_prefix</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>

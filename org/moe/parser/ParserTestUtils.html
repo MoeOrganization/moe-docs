@@ -40,7 +40,7 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">ParserTestUtils</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">ParserTestUtils</span>
       </span>
       </h4>
       
@@ -49,7 +49,7 @@
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="ArrayLiteralTestSuite.html" class="extype" name="org.moe.parser.ArrayLiteralTestSuite">ArrayLiteralTestSuite</a>, <a href="BooleanLiteralTestSuite.html" class="extype" name="org.moe.parser.BooleanLiteralTestSuite">BooleanLiteralTestSuite</a>, <a href="DoStatementTestSuite.html" class="extype" name="org.moe.parser.DoStatementTestSuite">DoStatementTestSuite</a>, <a href="FloatLiteralTestSuite.html" class="extype" name="org.moe.parser.FloatLiteralTestSuite">FloatLiteralTestSuite</a>, <a href="HashLiteralTestSuite.html" class="extype" name="org.moe.parser.HashLiteralTestSuite">HashLiteralTestSuite</a>, <a href="IfStatementTestSuite.html" class="extype" name="org.moe.parser.IfStatementTestSuite">IfStatementTestSuite</a>, <a href="IntLiteralTestSuite.html" class="extype" name="org.moe.parser.IntLiteralTestSuite">IntLiteralTestSuite</a>, <a href="PackageDefinitionTestSuite.html" class="extype" name="org.moe.parser.PackageDefinitionTestSuite">PackageDefinitionTestSuite</a>, <a href="StringLiteralTestSuite.html" class="extype" name="org.moe.parser.StringLiteralTestSuite">StringLiteralTestSuite</a>, <a href="TryBlockTestSuite.html" class="extype" name="org.moe.parser.TryBlockTestSuite">TryBlockTestSuite</a></div>
+          <div class="subClasses hiddenContent"><a href="ArrayHashIndexingTestSuite.html" class="extype" name="org.moe.parser.ArrayHashIndexingTestSuite">ArrayHashIndexingTestSuite</a>, <a href="ArrayLiteralTestSuite.html" class="extype" name="org.moe.parser.ArrayLiteralTestSuite">ArrayLiteralTestSuite</a>, <a href="BooleanLiteralTestSuite.html" class="extype" name="org.moe.parser.BooleanLiteralTestSuite">BooleanLiteralTestSuite</a>, <a href="DoStatementTestSuite.html" class="extype" name="org.moe.parser.DoStatementTestSuite">DoStatementTestSuite</a>, <a href="FloatLiteralTestSuite.html" class="extype" name="org.moe.parser.FloatLiteralTestSuite">FloatLiteralTestSuite</a>, <a href="HashLiteralTestSuite.html" class="extype" name="org.moe.parser.HashLiteralTestSuite">HashLiteralTestSuite</a>, <a href="IfStatementTestSuite.html" class="extype" name="org.moe.parser.IfStatementTestSuite">IfStatementTestSuite</a>, <a href="IntLiteralTestSuite.html" class="extype" name="org.moe.parser.IntLiteralTestSuite">IntLiteralTestSuite</a>, <a href="PackageDefinitionTestSuite.html" class="extype" name="org.moe.parser.PackageDefinitionTestSuite">PackageDefinitionTestSuite</a>, <a href="RangeLiteralTestSuite.html" class="extype" name="org.moe.parser.RangeLiteralTestSuite">RangeLiteralTestSuite</a>, <a href="SpecTestSuite.html" class="extype" name="org.moe.parser.SpecTestSuite">SpecTestSuite</a>, <a href="StringLiteralTestSuite.html" class="extype" name="org.moe.parser.StringLiteralTestSuite">StringLiteralTestSuite</a>, <a href="TryBlockTestSuite.html" class="extype" name="org.moe.parser.TryBlockTestSuite">TryBlockTestSuite</a></div>
         </div></div>
         
 
@@ -172,15 +172,15 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="org.moe.parser.ParserTestUtils#basicAST" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="basicAST(nodes:List[org.moe.ast.AST]):org.moe.ast.CompilationUnitNode"></a>
-      <a id="basicAST(List[AST]):CompilationUnitNode"></a>
+      <a id="basicAST(nodes:org.moe.ast.StatementsNode):org.moe.ast.CompilationUnitNode"></a>
+      <a id="basicAST(StatementsNode):CompilationUnitNode"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">basicAST</span><span class="params">(<span name="nodes">nodes: <span class="extype" name="scala.List">List</span>[<a href="../ast/AST.html" class="extype" name="org.moe.ast.AST">AST</a>]</span>)</span><span class="result">: <a href="../ast/CompilationUnitNode.html" class="extype" name="org.moe.ast.CompilationUnitNode">CompilationUnitNode</a></span>
+        <span class="name">basicAST</span><span class="params">(<span name="nodes">nodes: <a href="../ast/StatementsNode.html" class="extype" name="org.moe.ast.StatementsNode">StatementsNode</a></span>)</span><span class="result">: <a href="../ast/CompilationUnitNode.html" class="extype" name="org.moe.ast.CompilationUnitNode">CompilationUnitNode</a></span>
       </span>
       </h4>
       
@@ -281,6 +281,19 @@
       </span>
       </h4>
       
+    </li><li name="org.moe.parser.ParserTestUtils#interpreter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="interpreter:org.moe.interpreter.Interpreter"></a>
+      <a id="interpreter:Interpreter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">interpreter</span><span class="result">: <a href="../interpreter/Interpreter.html" class="extype" name="org.moe.interpreter.Interpreter">Interpreter</a></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -333,6 +346,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.moe.parser.ParserTestUtils#runtime" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="runtime:org.moe.runtime.MoeRuntime"></a>
+      <a id="runtime:MoeRuntime"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runtime</span><span class="result">: <a href="../runtime/MoeRuntime.html" class="extype" name="org.moe.runtime.MoeRuntime">MoeRuntime</a></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>

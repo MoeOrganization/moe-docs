@@ -44,7 +44,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Read Eval Print Loop object for <a href="Moe$.html" class="extype" name="org.moe.Moe">org.moe.Moe</a> runtimes.</p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -184,6 +184,19 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="org.moe.Moe.REPL#enter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="enter(interpreter:org.moe.interpreter.Interpreter,runtime:org.moe.runtime.MoeRuntime,dumpAST:Boolean):Unit"></a>
+      <a id="enter(Interpreter,MoeRuntime,Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">enter</span><span class="params">(<span name="interpreter">interpreter: <a href="interpreter/Interpreter.html" class="extype" name="org.moe.interpreter.Interpreter">Interpreter</a></span>, <span name="runtime">runtime: <a href="runtime/MoeRuntime.html" class="extype" name="org.moe.runtime.MoeRuntime">MoeRuntime</a></span>, <span name="dumpAST">dumpAST: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -210,22 +223,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.moe.Moe.REPL#evalLine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="evalLine(line:String):Unit"></a>
-      <a id="evalLine(String):Unit"></a>
+    </li><li name="org.moe.Moe.REPL#evalLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="evalLine(interpreter:org.moe.interpreter.Interpreter,runtime:org.moe.runtime.MoeRuntime,line:String,dumpAST:Boolean):Unit"></a>
+      <a id="evalLine(Interpreter,MoeRuntime,String,Boolean):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">evalLine</span><span class="params">(<span name="line">line: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">evalLine</span><span class="params">(<span name="interpreter">interpreter: <a href="interpreter/Interpreter.html" class="extype" name="org.moe.interpreter.Interpreter">Interpreter</a></span>, <span name="runtime">runtime: <a href="runtime/MoeRuntime.html" class="extype" name="org.moe.runtime.MoeRuntime">MoeRuntime</a></span>, <span name="line">line: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dumpAST">dumpAST: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Evaluates line of type String  and prints to stdio
-</p><div class="fullcomment"><div class="comment cmt"><p>Evaluates line of type String  and prints to stdio
-</p></div><dl class="paramcmts block"><dt class="param">line</dt><dd class="cmt"><p>to evaluate
-</p></dd></dl></div>
+      
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>

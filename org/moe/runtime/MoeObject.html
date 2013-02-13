@@ -49,7 +49,7 @@
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="MoeArrayObject.html" class="extype" name="org.moe.runtime.MoeArrayObject">MoeArrayObject</a>, <a href="MoeAttribute.html" class="extype" name="org.moe.runtime.MoeAttribute">MoeAttribute</a>, <a href="MoeBooleanObject.html" class="extype" name="org.moe.runtime.MoeBooleanObject">MoeBooleanObject</a>, <a href="MoeClass.html" class="extype" name="org.moe.runtime.MoeClass">MoeClass</a>, <a href="MoeFloatObject.html" class="extype" name="org.moe.runtime.MoeFloatObject">MoeFloatObject</a>, <a href="MoeHashObject.html" class="extype" name="org.moe.runtime.MoeHashObject">MoeHashObject</a>, <a href="MoeIntObject.html" class="extype" name="org.moe.runtime.MoeIntObject">MoeIntObject</a>, <a href="MoeMethod.html" class="extype" name="org.moe.runtime.MoeMethod">MoeMethod</a>, <a href="MoeNativeObject.html" class="extype" name="org.moe.runtime.MoeNativeObject">MoeNativeObject</a>, <a href="MoeNullObject.html" class="extype" name="org.moe.runtime.MoeNullObject">MoeNullObject</a>, <a href="MoeOpaque.html" class="extype" name="org.moe.runtime.MoeOpaque">MoeOpaque</a>, <a href="MoePackage.html" class="extype" name="org.moe.runtime.MoePackage">MoePackage</a>, <a href="MoePairObject.html" class="extype" name="org.moe.runtime.MoePairObject">MoePairObject</a>, <a href="MoeStringObject.html" class="extype" name="org.moe.runtime.MoeStringObject">MoeStringObject</a>, <a href="MoeSubroutine.html" class="extype" name="org.moe.runtime.MoeSubroutine">MoeSubroutine</a></div>
+          <div class="subClasses hiddenContent"><a href="MoeArrayObject.html" class="extype" name="org.moe.runtime.MoeArrayObject">MoeArrayObject</a>, <a href="MoeAttribute.html" class="extype" name="org.moe.runtime.MoeAttribute">MoeAttribute</a>, <a href="MoeBooleanObject.html" class="extype" name="org.moe.runtime.MoeBooleanObject">MoeBooleanObject</a>, <a href="MoeClass.html" class="extype" name="org.moe.runtime.MoeClass">MoeClass</a>, <a href="MoeFloatObject.html" class="extype" name="org.moe.runtime.MoeFloatObject">MoeFloatObject</a>, <a href="MoeHashObject.html" class="extype" name="org.moe.runtime.MoeHashObject">MoeHashObject</a>, <a href="MoeIntObject.html" class="extype" name="org.moe.runtime.MoeIntObject">MoeIntObject</a>, <a href="MoeMethod.html" class="extype" name="org.moe.runtime.MoeMethod">MoeMethod</a>, <a href="MoeNativeObject.html" class="extype" name="org.moe.runtime.MoeNativeObject">MoeNativeObject</a>, <a href="MoeOpaque.html" class="extype" name="org.moe.runtime.MoeOpaque">MoeOpaque</a>, <a href="MoePackage.html" class="extype" name="org.moe.runtime.MoePackage">MoePackage</a>, <a href="MoePairObject.html" class="extype" name="org.moe.runtime.MoePairObject">MoePairObject</a>, <a href="MoeStringObject.html" class="extype" name="org.moe.runtime.MoeStringObject">MoeStringObject</a>, <a href="MoeSubroutine.html" class="extype" name="org.moe.runtime.MoeSubroutine">MoeSubroutine</a>, <a href="MoeUndefObject.html" class="extype" name="org.moe.runtime.MoeUndefObject">MoeUndefObject</a></div>
         </div></div>
         
 
@@ -189,35 +189,33 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="org.moe.runtime.MoeObject#callMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="callMethod(name:String,args:List[org.moe.runtime.MoeObject]):org.moe.runtime.MoeObject"></a>
-      <a id="callMethod(String,List[MoeObject]):MoeObject"></a>
+      <a id="callMethod(method:org.moe.runtime.MoeMethod,args:List[org.moe.runtime.MoeObject]):org.moe.runtime.MoeObject"></a>
+      <a id="callMethod(MoeMethod,List[MoeObject]):MoeObject"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">callMethod</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="args">args: <span class="extype" name="scala.List">List</span>[<a href="" class="extype" name="org.moe.runtime.MoeObject">MoeObject</a>]</span>)</span><span class="result">: <a href="" class="extype" name="org.moe.runtime.MoeObject">MoeObject</a></span>
+        <span class="name">callMethod</span><span class="params">(<span name="method">method: <a href="MoeMethod.html" class="extype" name="org.moe.runtime.MoeMethod">MoeMethod</a></span>, <span name="args">args: <span class="extype" name="scala.List">List</span>[<a href="" class="extype" name="org.moe.runtime.MoeObject">MoeObject</a>]</span>)</span><span class="result">: <a href="" class="extype" name="org.moe.runtime.MoeObject">MoeObject</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Invoke the named method with the supplied arguments.</p><div class="fullcomment"><div class="comment cmt"><p>Invoke the named method with the supplied arguments.
-</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>The name of the method</p></dd><dt class="param">args</dt><dd class="cmt"><p>The list of arguments to provide to the method
+</p></div><dl class="paramcmts block"><dt class="param">args</dt><dd class="cmt"><p>The list of arguments to provide to the method
 </p></dd></dl></div>
-    </li><li name="org.moe.runtime.MoeObject#callMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="callMethod(name:String):org.moe.runtime.MoeObject"></a>
-      <a id="callMethod(String):MoeObject"></a>
+    </li><li name="org.moe.runtime.MoeObject#callMethod" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="callMethod(method:org.moe.runtime.MoeMethod):org.moe.runtime.MoeObject"></a>
+      <a id="callMethod(MoeMethod):MoeObject"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">callMethod</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="org.moe.runtime.MoeObject">MoeObject</a></span>
+        <span class="name">callMethod</span><span class="params">(<span name="method">method: <a href="MoeMethod.html" class="extype" name="org.moe.runtime.MoeMethod">MoeMethod</a></span>)</span><span class="result">: <a href="" class="extype" name="org.moe.runtime.MoeObject">MoeObject</a></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Invoke the named method.</p><div class="fullcomment"><div class="comment cmt"><p>Invoke the named method.
-</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>The name of the method
-</p></dd></dl></div>
+      <p class="shortcomment cmt">Invoke the named method.</p>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -354,6 +352,33 @@
       </span>
       </h4>
       <p class="shortcomment cmt">Returns false.</p>
+    </li><li name="org.moe.runtime.MoeObject#isInstanceOf" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isInstanceOf(klass:org.moe.runtime.MoeClass):Boolean"></a>
+      <a id="isInstanceOf(MoeClass):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="params">(<span name="klass">klass: <a href="MoeClass.html" class="extype" name="org.moe.runtime.MoeClass">MoeClass</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.moe.runtime.MoeObject#isInstanceOf" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isInstanceOf(klassname:String):Boolean"></a>
+      <a id="isInstanceOf(String):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="params">(<span name="klassname">klassname: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Ask if this object is-a instance of a class
+</p>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
